@@ -33,5 +33,7 @@ class BitcoinExchange{
 	void CheckData();
 
 	void CheckInput();
+
+	void PrintResult(std::string line);
 		
 };
