@@ -2,6 +2,9 @@
 
 #include <iostream>
 #include <stack>
+#include <sstream>
+#include <string>
+#include <cctype> 
 
 class RPN{
     private:
@@ -15,5 +18,5 @@ class RPN{
     ~RPN();
 
     void CheckNumber(char *av);
-    void calcul();
+    void calcul(std::string av);
 };
