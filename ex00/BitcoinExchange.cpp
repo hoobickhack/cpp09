@@ -6,7 +6,7 @@
 /*   By: isouaidi <isouaidi@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/31 14:10:17 by isouaidi          #+#    #+#             */
-/*   Updated: 2024/07/31 20:38:12 by isouaidi         ###   ########.fr       */
+/*   Updated: 2024/08/05 19:14:03 by isouaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -251,7 +251,7 @@ void BitcoinExchange::CheckInput(){
 
 			if ((mul_n < 0 || mul_n > 1000) )
 			{
-				std::cout << "Error: Input Multiplier between 0 and 1000\n";
+				std::cout << "Error : Input Multiplier between 0 and 1000\n";
 				continue;
 			}
 			

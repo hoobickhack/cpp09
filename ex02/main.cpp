@@ -5,18 +5,18 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: isouaidi <isouaidi@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/05 15:14:52 by isouaidi          #+#    #+#             */
-/*   Updated: 2024/08/05 15:14:53 by isouaidi         ###   ########.fr       */
+/*   Created: 2024/08/05 15:14:27 by isouaidi          #+#    #+#             */
+/*   Updated: 2024/08/05 15:54:39 by isouaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
-#include "RPN.hpp"
-#include <iostream>
+#include "PmergeMe.hpp"
 
 int main(int ac, char **av)
 {
-    RPN ilyes; 
-    if (ac == 2)
-        ilyes.CheckNumber(av[1]);
+	PmergeMe ford;
+	
+	if (ac > 1)
+		ford.CheckNumbers(av);
+		
 }

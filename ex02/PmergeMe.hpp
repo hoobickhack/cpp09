@@ -1,39 +1,46 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   RPN.hpp                                            :+:      :+:    :+:   */
+/*   PmergeMe.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: isouaidi <isouaidi@student.42nice.fr>      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2024/08/05 15:14:35 by isouaidi          #+#    #+#             */
-/*   Updated: 2024/08/05 15:14:36 by isouaidi         ###   ########.fr       */
+/*   Created: 2024/08/05 15:22:54 by isouaidi          #+#    #+#             */
+/*   Updated: 2024/08/05 18:51:46 by isouaidi         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
 
 #pragma once
 
 #include <iostream>
-#include <stack>
+#include <vector>
 #include <sstream>
 #include <string>
 #include <cctype> 
+#include <limits.h> 
 #include <fstream>
-#include <iterator>
-#include <limits.h>
+#include <utility>
 
-class RPN{
-    private:
-    std::stack<long> stack;
 
-    public:
+class PmergeMe{
+	private :
+		int impair_v;
+		
+		std::vector<int> init;
+		std::vector<int> max;
+		std::vector<int> min;
+		std::vector<std::pair<int, int> > pairs;
 
-    RPN();
-    RPN(const RPN &instance);
-    RPN& operator=(const RPN &instance);
-    ~RPN();
-
-    void CheckNumber(char *av);
-    
-    void calcul(std::string av);
+	public :
+		PmergeMe();
+		PmergeMe(const PmergeMe &instance);
+		PmergeMe& operator=(const PmergeMe &instance); 
+		~PmergeMe();
+		
+		void CheckNumbers(char **av);
+		int AddVector(std::string list);
+		void AddPairs();
+		void RecursivePush(size_t i);
+		void InsertionSort();
+		
 };
