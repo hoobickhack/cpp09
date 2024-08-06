@@ -67,6 +67,7 @@ void PmergeMe::CheckNumbers(char **av){
 	
 	AddPairs();
 	RecursivePush(0);
+	maxTrie.reserve(init.size());
 	RecursiveMax();
 	InsertionSort();
 	
